@@ -1,0 +1,31 @@
+<div class="account-value ">
+    <span title="usd + (btc * last_price)">
+        Account value:
+        ${{ account_value }}
+    </span>
+    <small class="timestamp" title="{{timestamp.full}}" data-date="{{timestamp.time}}">
+        {{timestamp}}
+    </small>
+</div>
+
+
+<div class="balance secondary">
+    <span>
+        Balance:
+        ${{usd_balance}},
+        ฿{{btc_balance}}
+    </span>
+</div>
+
+
+<div class="available secondary">
+        <span title="Available for trading">
+            Available:
+            ${{usd_available}},
+            ฿{{btc_available}}
+        </span>
+
+        <span title="Current fee">
+            (fee {{fee}}%)
+        </span>
+</div>

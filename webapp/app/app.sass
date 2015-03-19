@@ -1,0 +1,54 @@
+
+
+table
+  width: 100%
+  font-size: .8em
+
+td.n, th.n
+  text-align: right
+  font-family: "Menlo", monospace
+
+
+.table-responsive
+  overflow-y: scroll
+
+  #orders &
+    max-height: 300px !important
+
+  #transactions &
+    max-height: 400px
+
+#conn-status
+  width: 10px
+  height: 10px
+  border-radius: 100%
+  float: left
+  margin: 20px -8px 0 7px
+  opacity: .7
+  transition: all .1s
+
+
+  &.offline
+    background: red
+
+  &.online
+    background: green
+
+  &.connected
+    background: orange
+
+
+#ticker, #balance
+  font-size: 1.5em
+  .timestamp
+    display: inline
+    font-size: .5em
+    opacity: .7
+
+  .secondary
+    font-size: .7em
+
+
+
+[title]
+  cursor: help

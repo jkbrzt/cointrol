@@ -1,0 +1,19 @@
+[
+  {
+    "pk": 1,
+    "model": "core.balance",
+    "fields": {
+      "btc_reserved": "0",
+      "account": 1,
+      "fee": "0",
+      "btc_available": "0",
+      "created": "0001-01-01T00:00:00Z",
+      "timestamp": "0001-01-01T00:00:00Z",
+      "usd_reserved": "0",
+      "btc_balance": "0",
+      "usd_balance": "0",
+      "usd_available": "0",
+      "inferred": true
+    }
+  }
+]

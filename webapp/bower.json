@@ -1,0 +1,21 @@
+{
+    "name": "cointrol",
+    "version": "0.0.1",
+    "main": "public/app.js",
+    "dependencies": {
+        "backbone": "1.1.0",
+        "underscore": "1.5.2",
+        "jquery": "2.0.3",
+        "moment": "2.5.0",
+        "socksjs-client": "git://github.com/dobrite/socksjs-client.git",
+        "bootstrap": "3.0.3",
+        "font-awesome": "4.0.3"
+
+    },
+    "overrides": {
+        "backbone": {"main": "backbone.js"},
+        "underscore": {"main": "underscore.js"},
+        "socksjs-client": {"main": "sockjs-0.3.4.min.js"},
+        "font-awesome": {"main": ["css/font-awesome.css"]}
+    }
+}

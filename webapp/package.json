@@ -1,0 +1,24 @@
+{
+    "name": "cointrol",
+    "description": "Description",
+    "author": "Your Name",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/jkbr/cointrol.git"
+    },
+    "scripts": {
+        "start": "brunch watch --server",
+        "test": "brunch test"
+    },
+    "dependencies": {
+        "brunch": "1.7.13",
+        "javascript-brunch": ">= 1.0 < 1.8",
+        "css-brunch": ">= 1.0 < 1.8",
+        "uglify-js-brunch": ">= 1.0 < 1.8",
+        "clean-css-brunch": ">= 1.0 < 1.8",
+        "handlebars-brunch": ">= 1.0 < 1.8",
+        "coffee-script-brunch": ">= 1.0 < 1.8",
+        "sass-brunch": "1.7.0"
+    }
+}

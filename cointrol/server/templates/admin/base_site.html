@@ -1,0 +1,25 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+
+{% block title %}{{ title }} | Cointrol admin'{% endblock %}
+
+
+{% block branding %}
+    <h1 id="site-name">Cointrol administration</h1>
+{% endblock %}
+
+
+{% block nav-global %}{% endblock %}
+
+
+{% block extrahead %}
+    <style type="text/css">
+        #result_list {
+            text-align: right;
+        }
+        #result_list td {
+            font-family: Menlo, monospace;
+        }
+    </style>
+{% endblock %}

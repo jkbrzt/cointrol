@@ -1,0 +1,24 @@
+<td class="n" data-date="{{datetime.time}}" title="{{datetime.full}}">
+    {{datetime}}
+</td>
+<td class="n">{{id}}</td>
+<td><i title="{{status}}" class="{{icon}}"></i></td>
+{{#if status_changed}}
+    <td class="n" data-date="{{status_changed.time}}" title="{{status_changed.full}}">
+        {{status_changed}}
+    </td>
+{{else}}
+    <td class="n">-</td>
+{{/if}}
+
+<td class="n">
+    {{#if trading_session}}
+        {{trading_session}}
+    {{else}}
+        -
+    {{/if}}
+
+</td>
+<td>{{type}}</td>
+<td class="n">${{price}}</td>
+<td class="n">฿{{amount}}</td>

@@ -1,0 +1,10 @@
+*.sqlite3
+*.rdb
+*.db
+*.pyc
+*.egg-info
+tmp/
+node_modules/
+public/
+bower_components/
+settings_local.py
