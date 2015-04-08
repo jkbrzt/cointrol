@@ -61,6 +61,7 @@ The system consists of the following components:
 
 * Python 3.3+
 * Redis
+* npm
 
 
 ### Install Cointrol
@@ -90,7 +91,7 @@ cointrol/manage.py syncdb --noinput
 
 #### Web client
 
-Development setup — only needed if you plan on making changes to the single-page webapp.
+Install dependencies and build the app.
 
 ```bash
 # Install dependencies
@@ -100,7 +101,9 @@ npm install
 bower install
 
 # Watch source files
-brunch watch
+brunch build
+
+# Use `brunch watch` during development
 ```
 
 ### Create user
