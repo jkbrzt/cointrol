@@ -100,7 +100,7 @@ cd cointrol/webapp
 npm install
 bower install
 
-# Watch source files
+# Build the app
 brunch build
 
 # Use `brunch watch` during development
