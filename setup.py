@@ -6,7 +6,7 @@ setup(
     name='cointrol',
     version='0.0.1',
     packages=find_packages(),
-    url='https://github.com/jakubroztocil/cointrol',
+    url='https://github.com/jkbrzt/cointrol',
     license='MIT',
     author='Jakub Roztocil',
     author_email='jakub@roztocil.co',

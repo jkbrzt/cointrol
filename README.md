@@ -75,11 +75,11 @@ pip install virtualenv
 virtualenv ./virtualenv --python=$(which python3)
 
 # Activate the virtualenv
-# IMPORTANT: it needs to be activated everytime before you run
+# IMPORTANT: it needs to be activated every time before you run
 #            a manage.py or cointrol-* command.
 . virtualenv/bin/activate
 
-git clone git@github.com:jakubroztocil/cointrol.git
+git clone git@github.com:jkbrzt/cointrol.git
 
 echo 'from .settings_dev import *' > cointrol/cointrol/conf/settings_local.py
 
@@ -168,8 +168,8 @@ Besides `settings_dev.py`, the `conf` directory also has `settings_prod.py`, whi
 
 Jakub Roztocil
 
-* [https://github.com/jakubroztocil](https://github.com/jakubroztocil)
-* [https://twitter.com/jakubroztocil](https://twitter.com/jakubroztocil)
+* [https://github.com/jkbrzt](https://github.com/jkbrzt)
+* [https://twitter.com/jkbrzt](https://twitter.com/jkbrzt)
 * `3NVcdcoXrBV7jKv7T3st6kQz7XdsPNUn34`
 
 ## Licence
