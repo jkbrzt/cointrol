@@ -143,7 +143,7 @@ If you want Cointrol make transactions for you, select two following permissions
 Don't forget to activate the key by clicking "Activate" and confirming the email you receive from Bitstamp. 
 
 
-#### 3.2 Configure Cointrol the API credentials
+#### 3.2 Configure Cointrol with the API credentials
 1. Activate the virtualenv and run `cointrol-server`
 2. Go to [http://localhost:8000/admin/core/account/1/](http://localhost:8000/admin/core/account/1/) and enter your Bitstamp username as well as the API key and secret to the form there.
 
