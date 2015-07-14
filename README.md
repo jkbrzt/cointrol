@@ -174,7 +174,7 @@ Green: The web app has a WebSocket connection to `cointrol-server`, and *have* r
 
 
 Amber: The web app has a WeSocket connection to `cointrol-server`, but 
-*haven not* heard from `cointrol-trader` in a while.
+*have not* heard from `cointrol-trader` in a while.
 
 ![red](_/connection-red.png)
 
