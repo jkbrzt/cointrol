@@ -150,7 +150,7 @@ Don't forget to activate the key by clicking "Activate" and confirming the email
 ## Usage
 
 
-### Start the sever
+### Start `cointrol-server`
 
 
 ```bash
@@ -182,7 +182,7 @@ Red: The web app couldn't establish WebSocket connection to `cointrol-server`.
 
 
 
-### Start the trader
+### Start `cointrol-trader`
 
 ```bash
 . virtualenv/bin/activate
