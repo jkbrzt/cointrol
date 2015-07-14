@@ -129,7 +129,8 @@ cointrol/manage.py createsuperuser
 
 #### 3.1 Get API key and secret
 
-Go to [https://www.bitstamp.net/account/security/api](https://www.bitstamp.net/account/security/api). Create a new key and configure permissions for it. For the dashboard, Cointrol needs the at least the following permissions:
+Go to [https://www.bitstamp.net/account/security/api](https://www.bitstamp.net/account/security/api). Create a new key and configure permissions for it. Cointrol needs at least the following permissions:
+
  * `Account balance`
  * `User transactions`
  * `Open orders`
