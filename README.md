@@ -159,9 +159,9 @@ cointrol-server
 ```
 
 
-By default, it will run on [http://localhost:8000](localhost:8000). You can change the port with `--port=<port>`. 
+By default, it will run on [http://localhost:8000](http://localhost:8000). You can change the port with `--port=<port>`. 
 
-Use this convenient link to log in: [http://localhost:8000/admin/login/?next=/](http://localhost:8000/admin/login/?next=/) — the Django admin interface is used for authentication, and this link ensures redirection back to the app after signing in.
+Use this convenient link to log in: [http://localhost:8000/admin/login/?next=/](http://localhost:8000/admin/login/?next=/) — the Django admin interface is used for authentication, and this link ensures redirection back to the app after signing you in.
 
 **Connection indicator colors explained:**
 
