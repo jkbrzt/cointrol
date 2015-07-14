@@ -7,7 +7,7 @@ Cointrol is a Bitcoin trading bot and real-time dashboard for [Bitstamp](https:/
 
 ![cointrol-server and cointrol-trader running in the terminal](_/running-server-and-trader.png "cointrol-server and cointrol-trader running in the terminal")
 
-**Cointrol was created to automate Bitcoin speculation.** Besides automated trading based on price change triggers and various trading strategies, it also provides a **real-time updated dashboard for your Bitstamp account** where you can see all your orders and transactions real-time updated (something Bitstamp lacks). The dashboard can also be used for a real-time update overview without letting Cointrol make any transactions.
+**Cointrol was created to automate Bitcoin speculation.** Besides automated trading based on price change triggers and various trading strategies, it also provides a **real-time updated dashboard for your Bitstamp account** where you can see all your orders and transactions real-time updated (something Bitstamp lacks). The dashboard  for a real-time updated overview can also be used standalone without letting Cointrol make any transactions.
 
 Even though the original idea was to perhaps provide a fully-fledged hosted service, the system remained quite basic as it has only been used by its creator for a period of time in the winter of '13/'14 (when BTC price fluctuations were pretty insane). Some of the obvious limitations—all of which could easily be addressed—are:
 
