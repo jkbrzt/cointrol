@@ -213,6 +213,81 @@ During the installation process, you've created `cointrol/cointrol/conf/settings
 
 Besides `settings_dev.py`, the `conf` directory also has `settings_prod.py`, which is more suitable for production use. It defines logging configuration which makes messages of a level `>=` `WARNING` logged by the trader to be sent to you via email (e.g. when the trader places an order or there is an error). If you decide to use this settings file (by changing the import in `settings_local.py` to `from .settings_prod import *`, you'll have to configure at least [`DATABASES`](https://docs.djangoproject.com/en/1.7/ref/settings/#databases), [`ADMINS`](https://docs.djangoproject.com/en/1.7/ref/settings/#admins) and [`SECRET_KEY`](https://docs.djangoproject.com/en/1.7/ref/settings/#secret-key) as well in your in `settings_local.py`.
 
+## Code structure
+```bash
+~/code/cointrol $tree
+.
+|
+├── cointrol
+│   ├── __init__.py
+│   ├── conf                                  // Setting
+│   │   ├── __init__.py                       // Django config
+│   │   ├── requirements.txt                  // python required packages
+│   │   ├── settings_defaults.py              
+│   │   ├── settings_dev.py
+│   │   └── settings_prod.py
+│   ├── core                                  // Django care app, For database
+│   │   ├── __init__.py
+│   │   ├── castable.py
+│   │   ├── fields.py
+│   │   ├── fixtures
+│   │   │   └── initial_data.json
+│   │   ├── migrations
+│   │   │   ├── 0001_initial.py
+│   │   │   └── __init__.py
+│   │   ├── models.py
+│   │   └── serializers.py
+│   ├── server   
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── api  
+│   │   │   ├── __init__.py
+│   │   │   ├── exceptions.py
+│   │   │   ├── pagination.py
+│   │   │   ├── urls.py
+│   │   │   └── views.py
+│   │   ├── app.py
+│   │   ├── realtime.py
+│   │   ├── templates
+│   │   │   └── admin
+│   │   │       └── base_site.html
+│   │   └── urls.py
+│   ├── trader   
+│   │   ├── __init__.py
+│   │   ├── app.py
+│   │   ├── bitstamp.py
+│   │   ├── strategies.py
+│   │   ├── tests.py
+│   │   └── workers.py
+│   └── utils.py 
+├── manage.py
+├── setup.py                                      // cointrol python lib for pip install
+└── webapp
+    ├── README.md
+    ├── app
+    │   ├── app.coffee
+    │   ├── app.sass
+    │   ├── assets
+    │   │   ├── fonts -> ../../bower_components/font-awesome/fonts
+    │   │   └── index.html
+    │   ├── models.coffee
+    │   ├── router.coffee
+    │   ├── templates
+    │   │   ├── balance.hbs
+    │   │   ├── dashboard_page.hbs
+    │   │   ├── layout.hbs
+    │   │   ├── order_item.hbs
+    │   │   ├── session_item.hbs
+    │   │   ├── ticker.hbs
+    │   │   └── transaction_item.hbs
+    │   └── views.coffee
+    ├── bower.json
+    ├── config.coffee
+    └── package.json
+
+15 directories, 60 files
+
+```
 
 ## Contact
 
