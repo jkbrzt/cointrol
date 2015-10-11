@@ -214,8 +214,8 @@ During the installation process, you've created `cointrol/cointrol/conf/settings
 Besides `settings_dev.py`, the `conf` directory also has `settings_prod.py`, which is more suitable for production use. It defines logging configuration which makes messages of a level `>=` `WARNING` logged by the trader to be sent to you via email (e.g. when the trader places an order or there is an error). If you decide to use this settings file (by changing the import in `settings_local.py` to `from .settings_prod import *`, you'll have to configure at least [`DATABASES`](https://docs.djangoproject.com/en/1.7/ref/settings/#databases), [`ADMINS`](https://docs.djangoproject.com/en/1.7/ref/settings/#admins) and [`SECRET_KEY`](https://docs.djangoproject.com/en/1.7/ref/settings/#secret-key) as well in your in `settings_local.py`.
 
 ## Tech base
-[Django env](https://djangogirlstaipei.gitbooks.io/django-girls-taipei-tutorial/content/)
-[Python setup]http://yansu.org/2013/06/07/learn-python-setuptools-in-detail.html)
+* [Django env](https://djangogirlstaipei.gitbooks.io/django-girls-taipei-tutorial/content/)
+* [Python setup](http://yansu.org/2013/06/07/learn-python-setuptools-in-detail.html)
 
 ## Code structure
 ```bash
