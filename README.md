@@ -260,7 +260,7 @@ Besides `settings_dev.py`, the `conf` directory also has `settings_prod.py`, whi
 │   │   ├── tests.py
 │   │   └── workers.py
 │   └── utils.py 
-├── manage.py
+├── manage.py                                     // Django setup [Django env](https://djangogirlstaipei.gitbooks.io/django-girls-taipei-tutorial/content/)
 ├── setup.py                                      // cointrol python lib for pip install
 └── webapp
     ├── README.md
