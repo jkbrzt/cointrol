@@ -27,7 +27,7 @@ The system consists of the following components:
 ![](_/architecture.png)
 
 
-####`cointrol-trader`
+### `cointrol-trader`
 
 * Polls various Bitstamp API endpoints
 * Writes changes to DB
@@ -35,7 +35,7 @@ The system consists of the following components:
 * Opens orders, when suitable
 
 
-###`cointrol-server`
+### `cointrol-server`
 
 * Serves Webapp static files
 * Exposes DB for Webapp via a REST API
