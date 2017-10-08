@@ -85,7 +85,7 @@ virtualenv ./virtualenv --python=$(which python3)
 . virtualenv/bin/activate
 
 # Get the code
-git clone git@github.com:jakubroztocil/cointrol.git
+git clone https://github.com/jakubroztocil/cointrol
 
 # Create a local settings file
 echo 'from .settings_dev import *' > cointrol/cointrol/conf/settings_local.py
