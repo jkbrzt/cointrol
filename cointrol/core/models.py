@@ -309,7 +309,7 @@ class Order(models.Model):
     price = PriceField()
     amount = AmountField()
     type = models.IntegerField(choices=[(BUY, 'buy'), (SELL, 'sell')],
-                               max_length=255, db_index=True)
+                               db_index=True)
     datetime = models.DateTimeField()
 
     def __str__(self):
@@ -344,7 +344,6 @@ class Transaction(models.Model):
     btc_usd = PriceField()
     order = models.ForeignKey(Order, related_name='transactions', null=True)
     type = models.PositiveSmallIntegerField(
-        max_length=255,
         db_index=True,
         choices=[
             (DEPOSIT, 'deposit'),

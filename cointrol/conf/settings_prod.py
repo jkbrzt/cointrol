@@ -6,7 +6,6 @@ from .settings_defaults import *
 
 
 DEBUG = False
-TEMPLATE_DEBUG = False
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,

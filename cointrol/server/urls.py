@@ -6,7 +6,7 @@ import os
 
 from django.contrib import admin
 from django.conf import settings
-from django.conf.urls import url, include, patterns
+from django.conf.urls import url, include
 from django.contrib.auth import logout
 from django.http import HttpResponse
 from django.shortcuts import redirect
@@ -37,11 +37,10 @@ def error_view(request):
     raise RuntimeError('test exception')
 
 
-urlpatterns = patterns(
-    '',
+urlpatterns = [
     url(r'^$', index_view),
     url(r'^error$', error_view),
     url(r'^logout$', logout_view),
     url(r'^admin/', include(admin.site.urls)),
     url('^api/', include(api_urls)),
-)
+]

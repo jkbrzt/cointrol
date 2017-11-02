@@ -8,7 +8,6 @@ from .settings_defaults import *
 
 
 DEBUG = True
-TEMPLATE_DEBUG = True
 SECRET_KEY = 'asdf*&*hifdasfHKhljdsaf778'
 DATABASES = {
     'default': {
