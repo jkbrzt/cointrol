@@ -4,6 +4,6 @@ djangorestframework==3.7.1
 hiredis==0.1.4
 pytz==2014.7
 redis==2.10.3
-sockjs-tornado==1.0.1
-tornado==4.1
+sockjs-tornado==1.0.3
+tornado==4.5.2
 tornado-redis==2.4.18
