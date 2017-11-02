@@ -232,6 +232,7 @@ class Ticker(models.Model):
     low = PriceField()
     bid = PriceField()
     ask = PriceField()
+    open = PriceField()
 
     class Meta:
         ordering = ['-timestamp']

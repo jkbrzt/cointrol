@@ -70,12 +70,14 @@ class TickerSerializer(ModelSerializer):
 
     class Meta:
         model = Ticker
+        fields = '__all__'
 
 
 class BalanceSerializer(ModelSerializer):
 
     class Meta:
         model = Balance
+        fields = '__all__'
 
 
 class TradingSessionSerializer(ModelSerializer):
