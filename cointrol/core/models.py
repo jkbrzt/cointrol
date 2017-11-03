@@ -260,13 +260,20 @@ class Balance(models.Model):
     timestamp = models.DateTimeField()
 
     # API fields
+    fee = PercentField()
     usd_balance = AmountField()
     btc_balance = AmountField()
     usd_reserved = AmountField()
     btc_reserved = AmountField()
     btc_available = AmountField()
     usd_available = AmountField()
-    fee = PercentField()
+
+    eur_balance = AmountField()
+    xrp_balance = AmountField()
+    eur_reserved = AmountField()
+    xrp_reserved = AmountField()
+    eur_available = AmountField()
+    xrp_available = AmountField()
 
     class Meta:
         get_latest_by = 'timestamp'

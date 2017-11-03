@@ -117,13 +117,20 @@ class Transaction(Model):
 
 class Balance(Model):
     schema = {
+        'fee': Decimal,
         'usd_balance': Decimal,
         'btc_balance': Decimal,
         'usd_reserved': Decimal,
         'btc_reserved': Decimal,
         'btc_available': Decimal,
         'usd_available': Decimal,
-        'fee': Decimal,
+
+        'eur_balance': Decimal,
+        'xrp_balance': Decimal,
+        'eur_reserved': Decimal,
+        'xrp_reserved': Decimal,
+        'eur_available': Decimal,
+        'xrp_available': Decimal,
     }
 
 
@@ -268,13 +275,17 @@ class BitstampClient:
 
         """
         return self._get('/order_book/',
-                         params={'group': group},
+                         params={
+                             'group': group
+                         },
                          callback=callback)
 
     def transactions(self, timedelta_secs=86400, callback=None):
         """Return transactions for the last 'timedelta' seconds."""
         return self._get('/transactions/',
-                         params={'timedelta': timedelta_secs},
+                         params={
+                             'timedelta': timedelta_secs
+                         },
                          callback=callback, model_class=Transaction)
 
     def conversion_rate_usd_eur(self, callback=None):
