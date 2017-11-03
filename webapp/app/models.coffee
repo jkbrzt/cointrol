@@ -1,6 +1,6 @@
 processors =
     price: (n)-> parseFloat(n).toFixed(2)
-    amount: (n)-> parseFloat(n).toFixed(4)
+    amount: (n)-> parseFloat(n).toFixed(8)
     amountShort: (n)-> processors.amount(n).replace(/00+$/, '0')
     date: (v)->
         return if not v
@@ -103,8 +103,8 @@ class Transaction extends Model
     sortDateField: 'datetime'
     templateDataProcessors:
         btc: processors.amount
-        usd: processors.amount
-        fee: processors.amount
+        usd: processors.price
+        fee: processors.price
         btc_usd: processors.price
         datetime: processors.date
 

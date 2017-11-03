@@ -227,8 +227,8 @@ class BalanceView extends View
 
     getTemplateData: ->
 
-        account_value = @model.get('usd_available')
-        account_value += @model.get('btc_available') * app.tickers.first().get('last')
+        account_value = Number(@model.get('usd_available'))
+        account_value += Number(@model.get('btc_available')) * Number(app.tickers.first().get('last'))
         account_value = @model.templateDataProcessors.usd_available(account_value)
 
         data = super()
