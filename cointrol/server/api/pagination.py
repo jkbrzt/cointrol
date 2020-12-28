@@ -1,5 +1,5 @@
 """
-Custom colleciton pagination
+Custom collection pagination
 
 """
 from collections import OrderedDict
