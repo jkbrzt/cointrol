@@ -1,6 +1,6 @@
 Django==1.11.6
 django-extensions==1.9.7
-djangorestframework==3.7.1
+djangorestframework==3.11.2
 hiredis==0.1.4
 pytz==2014.7
 redis==2.10.3
