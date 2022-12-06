@@ -12,7 +12,7 @@
         "test": "brunch test"
     },
     "dependencies": {
-        "brunch": "1.7.13",
+        "brunch": "4.0.1",
         "javascript-brunch": ">= 1.0 < 1.8",
         "css-brunch": ">= 1.0 < 1.8",
         "uglify-js-brunch": ">= 1.0 < 1.8",
