@@ -1,6 +1,6 @@
 # Cointrol
 
-Cointrol is a Bitcoin trading bot and real-time dashboard for [Bitstamp](https://bitstamp.net) created by [@jakubroztocil](https://twitter.com/jakubroztocil).
+Cointrol is a Bitcoin trading bot and real-time dashboard for [Bitstamp](https://bitstamp.net) created by [@jkbrzt](https://twitter.com/jkbrzt).
 
 ![Dashboard in the browser](_/browser.png "Dashboard in the browser")
 
@@ -85,7 +85,7 @@ virtualenv ./virtualenv --python=$(which python3)
 . virtualenv/bin/activate
 
 # Get the code
-git clone https://github.com/jakubroztocil/cointrol
+git clone https://github.com/jkbrzt/cointrol
 
 # Create a local settings file
 echo 'from .settings_dev import *' > cointrol/cointrol/conf/settings_local.py
@@ -218,8 +218,8 @@ Besides `settings_dev.py`, the `conf` directory also has `settings_prod.py`, whi
 
 Jakub Roztocil
 
-* [https://github.com/jakubroztocil](https://github.com/jakubroztocil)
-* [https://twitter.com/jakubroztocil](https://twitter.com/jakubroztocil)
+* [https://github.com/jkbrzt](https://github.com/jkbrzt)
+* [https://twitter.com/jkbrzt](https://twitter.com/jkbrzt)
 * [http://roztocil.co](http://roztocil.co)
 * `3NVcdcoXrBV7jKv7T3st6kQz7XdsPNUn34`
 
